@@ -92,7 +92,7 @@ const config = ({
   use: {
     browserName: 'chromium',
     headless: false,
-    trace: 'on',
+    trace: 'off',
     screenshot: 'off'
 
   }
