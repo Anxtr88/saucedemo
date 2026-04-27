@@ -1,0 +1,31 @@
+{
+	"servers": {
+		"playwright": {
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest",
+				// "${input:args}"
+			],
+			// "cwd": "${input:cwd}",
+			// "sandboxEnabled": false,
+			// "dev": {
+			// 	"watch": [],
+			// 	"debug": {}
+			// },
+			// "env": {},
+			"type": "stdio"
+		}
+	},
+	"inputs": [
+		{
+			"id": "args",
+			"type": "promptString",
+			"description": "Enter additional arguments for the MCP server"
+		},
+		{
+			"id": "cwd",
+			"type": "promptString",
+			"description": "Enter the working directory for the server command"
+		}
+	]
+}
