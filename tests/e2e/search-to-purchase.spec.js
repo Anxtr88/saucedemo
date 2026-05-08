@@ -30,9 +30,4 @@ test('Verify login app', async ({ page }) => {
 
     await expect(page.locator(".complete-header")).toHaveText("Thank you for your order!");
 
-
-
-
-
-
 })

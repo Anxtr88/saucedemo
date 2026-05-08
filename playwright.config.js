@@ -83,7 +83,7 @@ import { trace } from 'node:console';
 // export default defineConfig
 const config = ({
   testDir: './tests',
-  timeout: 30 * 1000,
+  timeout: 20 * 1000,
   expect: {
     timeout: 10000,
   },

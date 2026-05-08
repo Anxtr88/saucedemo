@@ -15,7 +15,7 @@ class CheckoutPage2 {
         this.totalLabel = page.locator('.summary_total_label');
 
         this.finishButton = page.getByRole('button', { name: 'Finish' });
-        // this.cancelButton = page.getByRole('button', { name: 'Cancel' });
+        this.cancelButton = page.getByRole('button', { name: 'Cancel' });
         this.firstName = page.getByPlaceholder("First Name");
         this.lastName = page.getByPlaceholder("Last Name");
         this.zip = page.getByPlaceholder("Zip/Postal Code");
