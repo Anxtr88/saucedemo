@@ -4,7 +4,8 @@ module.exports = class LoginPage {
         this.page = page;
         this.userName = page.getByPlaceholder("Username");
         this.password = page.getByPlaceholder("Password");
-        this.login = page.getByRole("button", { name: "login" })
+        this.login = page.getByRole("button", { name: "login" });
+        this.cor
 
     }
 
@@ -12,10 +13,15 @@ module.exports = class LoginPage {
         await this.page.goto("https://www.saucedemo.com/");
     }
 
-    async validLogin() {
-        await this.userName.fill("standard_user");
-        await this.password.fill("secret_sauce");
+    async validLogin(userName, password) {
+        await this.userName.fill(userName);
+        await this.password.fill(password);
         await this.login.click();
+
+    }
+
+    async validInventory() {
+        const productpage = await page.locator('span.title').isVisible();
 
     }
 };

@@ -1,0 +1,12 @@
+[{
+"userName": "",
+"password": ""
+},
+{
+"userName": "locked_out_user",
+"password": "wrong_password"
+},
+{
+"userName": "invalid_user",
+"password": "secret_sauce"
+}]
